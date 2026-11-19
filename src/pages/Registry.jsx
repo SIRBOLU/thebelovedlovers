@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Registry = () => {
   const [copied, setCopied] = useState(false);
@@ -240,6 +241,7 @@ const Registry = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };

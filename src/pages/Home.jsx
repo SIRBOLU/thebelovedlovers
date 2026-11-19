@@ -19,6 +19,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const weddingDate = new Date("2027-01-16T00:00:00").getTime();
@@ -223,6 +224,7 @@ const Home = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };

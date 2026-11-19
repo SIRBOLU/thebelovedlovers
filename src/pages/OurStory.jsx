@@ -1,4 +1,5 @@
 // import React from 'react'
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const OurStory = () => {
@@ -142,6 +143,7 @@ const OurStory = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

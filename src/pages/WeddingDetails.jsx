@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const WeddingDetails = () => {
   const events = [
@@ -409,6 +410,7 @@ const WeddingDetails = () => {
           </p>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };
