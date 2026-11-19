@@ -7,6 +7,7 @@ import Message from "./pages/Message";
 import OurStory from "./pages/OurStory";
 import WeddingDetails from "./pages/WeddingDetails";
 import Rsvp from "./pages/Rsvp";
+import Registry from "./pages/Registry";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/message" element={<Message />} />
         <Route path="/ourstory" element={<OurStory />} />
         <Route path="/weddingdetails" element={<WeddingDetails />} />
+        <Route path="/registry" element={<Registry />} />
         <Route path="/rsvp" element={<Rsvp />} />
       </Routes>
     </div>

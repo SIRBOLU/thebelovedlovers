@@ -167,7 +167,7 @@ function Navbar() {
             onClick={closeMenu}
             className="font-dancing text-4xl font-bold text-blue-950 transition-colors duration-300 hover:text-pink-600"
           >
-            TBL<span className="text-yellow-500">.</span>
+            TBL<span className="text-yellow-500"></span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -223,6 +223,18 @@ function Navbar() {
               }
             >
               Gallery
+            </NavLink>
+            <NavLink
+              to="/registry"
+              className={({ isActive }) =>
+                `rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 ${
+                  isActive
+                    ? "bg-pink-300 font-bold text-blue-950"
+                    : "text-blue-950 hover:bg-pink-300 hover:text-blue-950"
+                }`
+              }
+            >
+              Registry
             </NavLink>
 
             <NavLink
@@ -335,6 +347,20 @@ function Navbar() {
                 }
               >
                 Gallery
+              </NavLink>
+
+              <NavLink
+                to="/registry"
+                onClick={closeMenu}
+                className={({ isActive }) =>
+                  `rounded-lg px-4 py-2 font-medium transition-all duration-300 hover:pl-6 ${
+                    isActive
+                      ? "bg-pink-200 font-bold text-blue-950"
+                      : "text-blue-950 hover:bg-pink-200"
+                  }`
+                }
+              >
+                Registry
               </NavLink>
 
               <NavLink
